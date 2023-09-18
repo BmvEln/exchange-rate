@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous" />
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <title>Exchange Rate</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="header__btn" type="button">
+        <h1 class="header__title">Exchange Rate</h1>
+      </button>
+    </header>
+    <main>
+      <section class="converter">
+        <form class="form-left" id="first-form">
+          <div class="input-container">
+            <input class="input" id="main-input" type="number" value="1" />
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdown-toggle dropdown-toggle-main" data-toggle="dropdown">
+              <div class="button-container">
+                <img class="img-main" src="./img/flag-EUR.svg" alt="" />
+                <p class="desc-main" id="descMain">EUR</p>
+                <div class="currency">
+                  <span class="down-arrow"></span>
+                  <span class="up-arrow"></span>
+                </div>
+              </div>
+            </button>
+
+            <ul class="dropdown-menu">
+              <li>
+                <button class="dropdown-menu__btn" id="main-btn-EUR" type="button">
+                  <img class="flag" src="./img/flag-EUR.svg" alt="" />
+                  <p class="title">EUR</p>
+                  <p class="desc">Евро</p>
+                </button>
+
+                <button class="dropdown-menu__btn" id="main-btn-USD" type="button">
+                  <img class="flag" src="./img/flag-USD.svg" alt="" />
+                  <p class="title">USD</p>
+                  <p class="desc">Доллар США</p>
+                </button>
+
+                <button class="dropdown-menu__btn" id="main-btn-RUB" type="button">
+                  <img class="flag" src="./img/flag-RUB.svg" alt="" />
+                  <p class="title">RUB</p>
+                  <p class="desc">Российский рубль</p>
+                </button>
+
+                <button class="dropdown-menu__btn" id="main-btn-CNY" type="button">
+                  <img class="flag" src="./img/flag-CNY.svg" alt="" />
+                  <p class="title">CNY</p>
+                  <p class="desc">Китайский юань</p>
+                </button>
+
+                <button class="dropdown-menu__btn" id="main-btn-KZT" type="button">
+                  <img class="flag" src="./img/flag-KZT.svg" alt="" />
+                  <p class="title">KZT</p>
+                  <p class="desc">Казахстанский тенге</p>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </form>
+
+        <div class="change">
+          <button class="change__btn" type="button">
+            <img class="change__arrow-left" src="./img/arrow-left.svg" alt="arrow-left" />
+            <img class="change__arrow-right" src="./img/arrow-right.svg" alt="arrow-right" />
+          </button>
+        </div>
+
+        <form class="form-left form-right">
+          <div class="input-container">
+            <input class="input" id="secondary-input" type="number" value="1" />
+          </div>
+
+          <div class="dropdown">
+            <button class="dropdown-toggle dropdown-toggle-secondary" data-toggle="dropdown">
+              <div class="button-container">
+                <img class="img-secondary" id="imgSecondary" src="./img/flag-RUB.svg" alt="" />
+                <p class="desc-secondary" id="descSecondary">RUB</p>
+                <div class="currency">
+                  <span class="down-arrow"></span>
+                  <span class="up-arrow"></span>
+                </div>
+              </div>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <button class="dropdown-menu__btn" id="secondary-btn-RUB" type="button">
+                  <img class="flag" src="./img/flag-RUB.svg" alt="" />
+                  <p class="title">RUB</p>
+                  <p class="desc">Российский рубль</p>
+                </button>
+
+                <button class="dropdown-menu__btn" id="secondary-btn-EUR" type="button">
+                  <img class="flag" src="./img/flag-EUR.svg" alt="" />
+                  <p class="title">EUR</p>
+                  <p class="desc">Евро</p>
+                </button>
+
+                <button class="dropdown-menu__btn" id="secondary-btn-USD" type="button">
+                  <img class="flag" src="./img/flag-USD.svg" alt="" />
+                  <p class="title">USD</p>
+                  <p class="desc">Доллар США</p>
+                </button>
+
+                <button class="dropdown-menu__btn" id="secondary-btn-CNY" type="button">
+                  <img class="flag" src="./img/flag-CNY.svg" alt="" />
+                  <p class="title">CNY</p>
+                  <p class="desc">Китайский юань</p>
+                </button>
+
+                <button class="dropdown-menu__btn" id="secondary-btn-KZT" type="button">
+                  <img class="flag" src="./img/flag-KZT.svg" alt="" />
+                  <p class="title">KZT</p>
+                  <p class="desc">Казахстанский тенге</p>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <button class="execute-convert-btn" id="inputRate" type="button">
+            <p class="execute-convert-btn__title">Convert</p>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

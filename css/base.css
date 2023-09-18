@@ -1,0 +1,340 @@
+@import "./reset.css";@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300;400;500&display=swap');
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 14px;
+    color: #fff;
+    
+}
+
+.container {
+    width: 625px;
+    height: 410px;
+    background-color: #734B6D;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 625px;
+    padding: 18px 15px 17px;
+    height: 60px;
+    border-radius: 14px 14px 0px 0px;
+    background: #42275A;
+
+}
+
+.header__title {
+    color: #FFF;
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0; /* перебили бутстрап css*/
+}
+
+.converter {
+    width: 625px;
+    height: 350px; 
+    padding-top: 115px;
+    background-color: #1E1E23;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border: 1px solid #42275A;
+
+}
+
+.form-left {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    background: #734B6D;
+    width: 252px;
+    border-radius: 12px;
+    border: 1px solid #343436;
+}
+
+/* .form-left p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;    
+    font-weight: 300;
+} */
+
+
+.input-container {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+
+    height: 60px;
+    width: 160px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+
+.input { 
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;    
+    font-weight: 300;
+    color: #fff;
+
+    display: inline-block;
+    padding: 0 6px 0 10px;
+    width: 160px;
+    direction: rtl;
+}
+
+.dropdown {
+    
+}
+
+
+
+.dropdown-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60px;
+    width: 90px;
+    color: #fff;
+    /* border-left: 1px solid #343436; */
+    
+    /* background-color: #dd21; */
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+.button-container {
+    position: relative;
+    width: 90px;
+    height: 60px;   
+
+    border-bottom-right-radius: 12px; /* снизу по радиусу не rликается */
+    border-top-right-radius: 12px;  /*а сверху кликается. Как так? */
+
+    border-left: 1px solid #343436; 
+}
+
+
+.dropdown-menu {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 300;
+
+    padding: 8px 0;
+
+    position: absolute;
+    top: 63px; 
+    left: -87px;
+    width: 178px;
+    border-radius: 10px;
+    background-color: #2C252E;
+    color: #fff;
+}
+
+.dropdown-menu__btn {
+    display: flex;
+    flex-direction: row;
+    padding: 3px 10px 3px 20px;
+    width: 100%;
+
+    align-items: center;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+.dropdown-menu__btn:hover {
+    background-color: rgba(217, 217, 217, 0.20);
+    transition: color 0.2s ease-in;
+}
+
+.dropdown-menu__btn
+
+
+.flag,
+.title {
+    padding-right: 5px;
+}
+
+.desc-main, .desc-secondary {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.dropdown-menu__btn:not(:last-child) {
+    margin-right: 5px;
+}
+
+
+.img-main, .img-secondary {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.currency {
+    position: absolute;
+    left: 55px;
+    bottom: 19px;
+}
+
+.down-arrow  {
+    display: inline-block;
+    position: relative;
+    width: 0;
+    height: 0;
+    left: 9.8px;
+    top: 1px;
+    margin-left: 2px;
+    vertical-align: middle;
+
+    border-top: 4px dashed;
+    border-top: 4px dashed;
+
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.up-arrow {
+    display: inline-block;
+    position: absolute;
+    width: 0;
+    height: 0px;
+    left: 9.8px;
+    bottom: 13px;
+    margin-left: 2px;
+    vertical-align: middle;
+
+    border-bottom: 4px dashed;
+
+
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.img-flag {
+    position: relative;
+    padding: 23px 39px 0 30px;
+}
+
+
+.img-arrow {
+    position: absolute;
+    padding: 25px 21px 24px 58px;
+}
+
+.change {
+    display: flex;
+    position: absolute;
+    left: 300px;
+    top: 182px;
+    flex-direction: column;
+    width: 25px;
+    height: 22px;
+}
+
+.change__btn {
+    
+}
+
+.form-right {
+    position: absolute;
+    top: 175px;
+    left: 330px;
+}
+
+.execute-convert-btn {
+    position: relative;
+    left: -88px;
+    bottom: -149px;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 300;
+    
+    padding: 9px 27px 9px 28px;
+    background-color: #734B6D;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.execute-convert-btn:hover {
+    color: rgb(73, 51, 75);
+    transition: color 0.2s ease-in;
+}
+
+/* .execute-convert-btn:active {
+    color: rgb(226, 34, 243);
+    background-color: #734b6d99;
+} */
+
+
+/* .form-right {
+    display: flex;
+    position: relative;
+
+    position: absolute;
+    left: 355px;
+    top: 175px;
+
+    align-items: center;
+    height: 60px;
+    width: 250px;
+    background: linear-gradient(135deg, #42275A 0%, #734B6D 100%), #AB5959;
+    border-radius: 12px;
+    border: 1px solid #343436;
+}
+
+.form-right p {
+    font-family: 'Roboto', sans-serif;
+    padding: 2px 39px 8px 31px;
+    font-size: 10px;    
+    font-weight: 300;
+} */
+    
+
+/* .input-right {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;    
+    font-weight: 500;
+    color: #fff;
+
+    display: inline-block;
+    padding: 0 6px 0 10px;
+    width: 155px;
+    direction: rtl;
+}
+
+.btn-right {
+
+}
+
+.btn-right__rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60px;
+    width: 90px;
+    color: #fff;
+    border-left: 1px solid #343436;
+    background-color: #dd21;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+} 
+
+.img-flag-right {
+    position: relative;
+    padding: 23px 39px 0 30px;
+
+}
+
+.img-arrow-right {
+    position: absolute;
+    padding: 25px 21px 24px 58px;
+} */
